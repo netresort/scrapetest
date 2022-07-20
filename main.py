@@ -26,8 +26,8 @@ def clean_text(text):
 
 def main():
   driver = get_drvier()
-  #time.sleep(2)
+  time.sleep(2)
   element = driver.find_element(by="xpath", value="/html/body/div[1]/div/h1[2]")
-  #return clean_text(element.text)
-return element.text
+  return clean_text(element.text)
+
 print(main())
